@@ -3,16 +3,16 @@
 double num1;
 double num2;
 
-Console.WriteLine("Enter the first number");
+Console.WriteLine("Enter the first number:");
 bool userInput1 = double.TryParse(Console.ReadLine(), out num1);
 
-Console.WriteLine("Enter the second number");
+Console.WriteLine("Enter the second number:");
 bool userInput2 = double.TryParse(Console.ReadLine(), out num2);
 
 
 if (userInput1 && userInput2)
 {
-    Console.WriteLine("What operation do you want to perform\n+\n-\n*\n/");
+    Console.WriteLine("Choose an operation: +, -, *, /");
     string operation = Console.ReadLine();
     if (operation == "+")
         Console.WriteLine($"Result: {num1 + num2}");
